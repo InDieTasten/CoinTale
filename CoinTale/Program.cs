@@ -8,8 +8,6 @@
             InitializeTerminal();
             DisplayFlashScreen();
             DisplayIntro();
-            // TODO DisplayMainMenu();
-            // TODO DisplayTutorial();
             State.KeepRunning = true;
             do
             {
@@ -33,7 +31,7 @@
         private static void DisplayIntro()
         {
             Console.Clear();
-            Console.WriteLine("Here is the games introduction text. TODO fill in with actual intro and add some paging if I'm already at it you know...");
+            Console.WriteLine("Here is the games introduction text.");
         }
 
         private static void ExecuteCommand(Command parsedCommand)
