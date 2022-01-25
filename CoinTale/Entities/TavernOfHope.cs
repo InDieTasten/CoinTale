@@ -1,5 +1,6 @@
 ﻿using CoinTale.ComponentSystem;
 using CoinTale.ComponentSystem.Naming;
+using CoinTale.Entities;
 
 namespace CoinTale.World.Distinct
 {
@@ -8,6 +9,8 @@ namespace CoinTale.World.Distinct
         public TavernOfHope()
         {
             Components.Add(new NameComponent(this, "Tavern of Hope"));
+            ChildEntities.Add(new Player());
+            ChildEntities.Add(new Table(null));
         }
     }
 }
