@@ -1,8 +1,10 @@
-﻿namespace CoinTale
+﻿using CoinTale.ComponentSystem;
+
+namespace CoinTale
 {
     public struct TaleState
     {
-        public Location CurrentLocation { get; set; }
-        public bool KeepRunning { get; set; } = true;
+        public Entity RootEntity;
+        public bool KeepRunning;
     }
 }

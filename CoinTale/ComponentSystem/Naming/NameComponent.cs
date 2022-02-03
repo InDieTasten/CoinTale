@@ -2,12 +2,10 @@
 {
     public class NameComponent : Component
     {
-        private object entity;
         private string name;
 
-        public NameComponent(Entity entity, string name)
+        public NameComponent(Entity entity, string name) : base(entity)
         {
-            this.entity = entity;
             this.name = name;
             NameComponentSystem.NamedEntities.Add(entity);
         }

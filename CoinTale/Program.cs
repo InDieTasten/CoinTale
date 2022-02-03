@@ -1,4 +1,6 @@
-﻿namespace CoinTale
+﻿using CoinTale.Entities;
+
+namespace CoinTale
 {
     public static class Program
     {
@@ -9,6 +11,7 @@
             DisplayFlashScreen();
             DisplayIntro();
             State.KeepRunning = true;
+            State.RootEntity = new RootEntity();
             do
             {
                 Console.WriteLine("What do you do?");

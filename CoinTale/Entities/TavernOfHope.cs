@@ -10,7 +10,7 @@ namespace CoinTale.World.Distinct
         {
             Components.Add(new NameComponent(this, "Tavern of Hope"));
             ChildEntities.Add(new Player());
-            ChildEntities.Add(new Table(null));
+            ChildEntities.Add(new Table());
         }
     }
 }

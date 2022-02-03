@@ -5,13 +5,9 @@ namespace CoinTale.Entities
 {
     public class Table : Entity
     {
-        public Table(List<Entity>? childEntities)
+        public Table()
         {
             Components.Add(new NameComponent(this, "Regulars table"));
-            if (childEntities != null)
-            {
-                ChildEntities.AddRange(childEntities);
-            }
         }
     }
 }
